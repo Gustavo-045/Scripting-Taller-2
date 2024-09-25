@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,6 +22,14 @@ namespace SRP
         }
     }
 
-
+    // Almacenamiento.cs
+    public class Almacenamiento
+    {
+        public void GuardarUsuario(string nombre)
+        {
+            Console.WriteLine($"Usuario {nombre} guardado en archivo.");
+        }
+    }
 
 }
+
