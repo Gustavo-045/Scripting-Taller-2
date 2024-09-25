@@ -24,6 +24,21 @@ public class Dictador
         ciudadanos.Remove(ciudadano);
     }
 
+     public void Notify()
+    {
+        foreach (var ciudadano in ciudadanos)
+        {
+            ciudadano.Update(mensaje);
+        }
+    }
+
+    // Método para cambiar el mensaje
+    public void ChangeMensaje(string newMessage)
+    {
+        mensaje = newMessage;
+        Notify(); // Notificar a todos los ciudadanos
+    }
+
   
   
 }
