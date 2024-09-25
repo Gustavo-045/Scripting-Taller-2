@@ -16,6 +16,21 @@ namespace Singleton
 
 
 
+        public static Logger Instance 
+        {
+            get
+            { 
+                if (_Instance == null)
+                {
+                    _Instance = new Logger();
+                } 
+                return _Instance;
+            } 
+        }
+        private Logger()
+        {
+        }
+
         // Método para escribir mensajes en el archivo de log
         public void Log(string message)
         {
