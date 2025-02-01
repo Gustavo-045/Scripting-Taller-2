@@ -1,1 +1,1 @@
-
+This repository contains an implementation of design patterns applied to a scripting project in Unity. It includes patterns such as SRP, Strategy, Liskov, Decorator,  among others, to organize and improve the structure of the code.
